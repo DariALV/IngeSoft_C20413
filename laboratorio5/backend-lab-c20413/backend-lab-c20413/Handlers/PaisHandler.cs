@@ -16,10 +16,8 @@ namespace backend_lab.Handlers
         }
         private DataTable CrearTablaConsulta(string consulta)
         {
-            SqlCommand comandoParaConsulta = new
-            SqlCommand(consulta, _conexion);
-            SqlDataAdapter adaptadorParaTabla = new
-            SqlDataAdapter(comandoParaConsulta);
+            SqlCommand comandoParaConsulta = new SqlCommand(consulta, _conexion);
+            SqlDataAdapter adaptadorParaTabla = new SqlDataAdapter(comandoParaConsulta);
             DataTable consultaFormatoTabla = new DataTable();
             _conexion.Open();
             adaptadorParaTabla.Fill(consultaFormatoTabla);
@@ -45,6 +43,21 @@ namespace backend_lab.Handlers
                 });
             }
             return paises;
+        }
+
+        public bool CrearPais(PaisModel pais)
+        {
+            var consulta = @"INSERT INTO [dbo].[Pais]
+                             ([Nombre],[Idioma] ,[Continente])
+                             VALUES(@Nombre, @Idioma, @Continente) ";
+            var comandoParaConsulta = new SqlCommand(consulta, _conexion);
+            comandoParaConsulta.Parameters.AddWithValue("@Nombre", pais.Nombre);
+            comandoParaConsulta.Parameters.AddWithValue("@Idioma", pais.Idioma);
+            comandoParaConsulta.Parameters.AddWithValue("@Continente", pais.Continente);
+            _conexion.Open();
+            bool exito = comandoParaConsulta.ExecuteNonQuery() >= 1;
+            _conexion.Close();
+            return exito;
         }
     }
 }
