@@ -39,23 +39,23 @@
     export default {
         data() {
             return {
-            datosFormulario: { nombre: "", continente: "", idioma:"" },
+                datosFormulario: { nombre: "", continente: "", idioma:"" },
             };
         },
         methods: {
             guardarPais() {
                 console.log("Datos a guardar:", this.datosFormulario);
-                axios.post("https://localhost:7019/api/Paises", {
-                nombre: this.datosFormulario.nombre,
-                continente: this.datosFormulario.continente,
-                idioma: this.datosFormulario.idioma,
+                axios.post("https://localhost:7296/api/Paises", {
+                    nombre: this.datosFormulario.nombre,
+                    continente: this.datosFormulario.continente,
+                    idioma: this.datosFormulario.idioma,
                 })
                 .then(function (response) {
-                console.log(response);
-                window.location.href = "/";
+                    console.log(response);
+                    window.location.href = "/";
                 })
                 .catch(function (error) {
-                console.log(error);
+                    console.log(error);
                 });
             },
         },
