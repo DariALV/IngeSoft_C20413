@@ -1,0 +1,191 @@
+{
+  "id": "308c9734-78b8-4904-b031-11374781bfe4",
+  "version": "2.0",
+  "name": "UITestLaboratorio7",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "88d6e222-871e-41d2-b13c-67db3793fc82",
+    "name": " PruebaUIUno",
+    "commands": [{
+      "id": "6bbf22e1-4671-4c90-a228-4b75f06b6bf5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "624b2706-732d-42fd-b405-d1da137ac1f2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2cc7d052-677e-4420-9ff6-23b29a6866c3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.display-4",
+      "targets": [
+        ["css=.display-4", "css:finder"],
+        ["xpath=//div[@id='app']/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Lista de países')]", "xpath:innerText"]
+      ],
+      "value": "Lista de países"
+    }, {
+      "id": "5fa5a0e8-35d6-4232-84be-8547fb41c548",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-name",
+      "targets": [
+        ["css=.col-name", "css:finder"],
+        ["xpath=//div[@id='app']/div/table/thead/tr/th", "xpath:idRelative"],
+        ["xpath=//th", "xpath:position"],
+        ["xpath=//th[contains(.,'Nombre')]", "xpath:innerText"]
+      ],
+      "value": "Nombre"
+    }, {
+      "id": "f659702a-a225-43da-8d6b-1a7fbfec940c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-continent",
+      "targets": [
+        ["css=.col-continent", "css:finder"],
+        ["xpath=//div[@id='app']/div/table/thead/tr/th[2]", "xpath:idRelative"],
+        ["xpath=//th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'Continente')]", "xpath:innerText"]
+      ],
+      "value": "Continente"
+    }, {
+      "id": "a826ae0c-c9b2-4a20-86dd-1a22bcf392e6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-language",
+      "targets": [
+        ["css=.col-language", "css:finder"],
+        ["xpath=//div[@id='app']/div/table/thead/tr/th[3]", "xpath:idRelative"],
+        ["xpath=//th[3]", "xpath:position"],
+        ["xpath=//th[contains(.,'Idioma')]", "xpath:innerText"]
+      ],
+      "value": "Idioma"
+    }, {
+      "id": "9698a18e-fcbc-4faf-8b81-3cf226bc55da",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-actions",
+      "targets": [
+        ["css=.col-actions", "css:finder"],
+        ["xpath=//div[@id='app']/div/table/thead/tr/th[4]", "xpath:idRelative"],
+        ["xpath=//th[4]", "xpath:position"],
+        ["xpath=//th[contains(.,'Acciones')]", "xpath:innerText"]
+      ],
+      "value": "Acciones"
+    }, {
+      "id": "404a16a3-36cd-41ca-825d-50a08d9ece64",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn-outline-secondary",
+      "targets": [
+        ["css=.btn-outline-secondary", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Agregar país')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "898932bd-6454-4472-a201-a870a6339e53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-secondary",
+      "targets": [
+        ["css=.btn-outline-secondary", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Agregar país')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7648f940-fcd1-4c70-a9a0-98484eedf238",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "frontend-lab",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1330c4e9-15fa-45d1-8727-a7cb7c378fef",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-name",
+      "targets": [
+        ["css=.form-name", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/form/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Nombre:')]", "xpath:innerText"]
+      ],
+      "value": "Nombre:"
+    }, {
+      "id": "4c276014-eaf1-4627-a719-c0cc8b4ac132",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "frontend-lab",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "564d23c4-33df-4b97-8efa-f4d557ecf4ee",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-languagd",
+      "targets": [
+        ["css=.form-languagd", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/form/div[3]/label", "xpath:idRelative"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Idioma:')]", "xpath:innerText"]
+      ],
+      "value": "Idioma:"
+    }, {
+      "id": "ea6d5d3d-c8de-4300-b137-ab6f491151d8",
+      "comment": "",
+      "command": "assertSelectedValue",
+      "target": "id=continente",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c939885-c3b1-4129-aace-d4a93c5a1cc6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/form/div[4]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfd6b184-d23d-4a70-98f7-72a6ef7a6f8e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-continent",
+      "targets": [
+        ["css=.form-continent", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/form/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Continente:')]", "xpath:innerText"]
+      ],
+      "value": "Continente:"
+    }]
+  }],
+  "suites": [{
+    "id": "063952cd-e4ab-47a1-84d2-ed12fc10f692",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["88d6e222-871e-41d2-b13c-67db3793fc82"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

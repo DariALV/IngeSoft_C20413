@@ -5,11 +5,11 @@
                 <h3 class="text-center">Formulario de creación de países</h3>
                 <form @submit.prevent="guardarPais">
                     <div class="form-group">
-                        <label for="nombre">Nombre:</label>
+                        <label for="nombre" class="form-name">Nombre:</label>
                         <input v-model="datosFormulario.nombre" type="text" id="name" class="form-control" required/>
                     </div>
                     <div class="form-group">
-                        <label for="continente">Continente:</label>
+                        <label for="continente" class="form-continent">Continente:</label>
                         <select v-model="datosFormulario.continente" id="continente" required class="form-control">
                             <option value="" disabled>Seleccione un continente</option>
                             <option>África</option>
@@ -21,7 +21,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="idioma">Idioma:</label>
+                        <label for="idioma" class="form-languagd">Idioma:</label>
                     <input v-model="datosFormulario.idioma" type="text" id="idioma" class="form-control" required/>
                     </div>
                     <div>

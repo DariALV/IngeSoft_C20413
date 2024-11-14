@@ -13,10 +13,10 @@
         <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
             <thead>
                 <tr>
-                    <th>Nombre</th>
-                    <th>Continente</th>
-                    <th>Idioma</th>
-                    <th>Acciones</th>
+                    <th class="col-name">Nombre</th>
+                    <th class="col-continent">Continente</th>
+                    <th class="col-language">Idioma</th>
+                    <th class="col-actions">Acciones</th>
                 </tr>
             </thead>
             <tbody>
